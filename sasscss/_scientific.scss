@@ -1,0 +1,93 @@
+#scientific {
+  background: linear-gradient(to right, #00004d, #fff);
+}
+
+.flex-szamolo {
+  width: 60vw;
+  height: 70vh;
+  padding: 10px;
+  margin-left: 10vw;
+  border-radius: 8px;
+  box-shadow: 12px 12px 15px #aaa, -5px -5px 8px #00004d;
+}
+
+.display {
+  #screen {
+    width: 97%;
+    height: 70px;
+    font-size: 1.8rem;
+    outline: none;
+    border: none;
+    text-align: right;
+    background: none;
+    margin-left: 2%;
+    padding-right: 0.5rem;
+    border-radius: 6px;
+    box-shadow: inset 5px 5px 5px #aaa, inset -5px -5px 5px #aaa;
+  }
+
+  ::placeholder{
+    color: #777;
+  }
+}
+
+.btns {
+  width: 100%;
+  margin-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .row {   
+    text-align: center;    
+
+    button {
+      width: 13%;
+      height: 30px;
+      font-size: 1rem;
+      border: none;
+      outline: none;
+      margin: 1%;
+      border-radius: 4px;
+      box-shadow: 5px 5px 8px #00004d, -3px -3px 5px #aaa;
+      cursor: pointer;     
+    }
+
+    #equal {
+      width: 29%;
+      background-color: lime;
+    }
+
+    button:active{
+      box-shadow: 1px 1px 3px #00004d, -1px -1px 3px #aaa;
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .display #screen{
+    padding-right: 2px;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .flex-szamolo{
+    width: 80vw;
+  }
+
+  .display #screen{
+    padding-right: 2px;
+    font-size: 1.2rem;
+  }
+
+  .btns .row button {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .flex-szamolo{
+   height: 90vh;
+  }
+}

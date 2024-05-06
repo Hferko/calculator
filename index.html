@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="triangle.svg" type="image/x-icon">
+
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Számológépek</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#simple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-calculator"
+                viewBox="0 0 16 16">
+                <path
+                    d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                <path
+                    d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </a>
+        <a href="#scientific">
+            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-calendar3"
+                viewBox="0 0 16 16">
+                <path
+                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
+                <path
+                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+            </svg>
+        </a>
+    </nav>
+   
+    <h1>Számológép</h1>
+
+    <main class='container'>
+
+        <section id='simple'>
+            <div class="szamologep">
+                <div class="calculator-grid">
+                    <div class="output">
+                        <div data-previous-operand class="elozo-operand"></div>
+                        <div data-current-operand class="aktual-operand"></div>
+                    </div>
+                    <button data-all-clear class="dupla-span">AllClr</button>
+                    <button data-delete>DEL</button>                   
+                    <button data-operator>÷</button>
+                    <button data-number>1</button>
+                    <button data-number>2</button>
+                    <button data-number>3</button>
+                    <button data-operator>*</button>
+                    <button data-number>4</button>
+                    <button data-number>5</button>
+                    <button data-number>6</button>
+                    <button data-operator>+</button>
+                    <button data-number>7</button>
+                    <button data-number>8</button>
+                    <button data-number>9</button>
+                    <button data-operator>-</button>
+                    <button data-number>.</button>
+                    <button data-number>0</button>
+                    <button data-equals class="dupla-span">=</button>
+                </div>
+            </div>
+        </section>
+
+        <section id='scientific'>
+            <div class="szamologep">
+                <div class="flex-szamolo">
+                    <div class="display">
+                        <input type="text" name="screen" id="screen" placeholder="_">
+                    </div>
+
+                    <div class="btns">
+                        <div class="row">
+                            <button class="operator" value="sin">sin</button>
+                            <button class="gomb">(</button>
+                            <button class="gomb">)</button>
+                            <button class="gomb">%</button>
+                            <button class="operator" value="C">C</button>
+                            <button class="operator" style="background-color: #ff8080;" value="AC">AC</button>
+                        </div>
+                        <div class="row">
+                            <button class="operator" value="cos">cos</button>
+                            <button class="operator" value="Pi">π</button>
+                            <button class="gomb">7</button>
+                            <button class="gomb">8</button>
+                            <button class="gomb">9</button>
+                            <button class="gomb">/</button>
+                        </div>
+                        <div class="row">
+                            <button class="operator" value="tan">tan</button>
+                            <button class="operator" value="log10">log<sub>10</sub></button>
+                            <button class="gomb">4</button>
+                            <button class="gomb">5</button>
+                            <button class="gomb">6</button>
+                            <button class="gomb">*</button>
+                        </div>
+                        <div class="row">
+                            <button class="operator" value="gyok2">&#8730;<sup>2</sup></button>
+                            <button class="operator" value="gyok3">&#8730;<sup>3</sup></button>
+                            <button class="gomb">1</button>
+                            <button class="gomb">2</button>
+                            <button class="gomb">3</button>
+                            <button class="gomb">-</button>
+                        </div>
+                        <div class="row">
+                            <button class="operator" value="x!">x!</button>
+                            <button class="operator" value="x2">x<sup>2</sup></button>
+                            <button class="operator" value="2x">2<sup>x</sup></button>
+                            <button class="gomb">0</button>
+                            <button class="gomb">.</button>                            
+                            <button class="gomb">+</button>
+                        </div>
+
+                        <div class="row">
+                            <button class="operator" value="1/x">1/x</button>
+                            <button class="operator" value="x3">x<sup>3</sup></button>
+                            <button class="operator" value="e">e</button>
+                            <button class="operator" value="+/-">+/-</button>
+                            <button class="gomb" id="equal">=</button>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/simple.js" defer></script>
+    <script src="./js/scientific.js" defer></script>
+</body>
+
+</html>
